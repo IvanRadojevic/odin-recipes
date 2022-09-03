@@ -6,49 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pancakes</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&family=Shrikhand&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <h1>Pancakes</h1>
-    <img src="../imgs/palacinke.jpg" alt="Three pancakes with hazelnut spread on the plate.">
-    <p class="cake-desc">They are called palačinka (plural: palačinke). These pancakes are thin and filled with apricot,
-        plum, lingonberry, apple or strawberry jam, chocolate sauce, or hazelnut spread. Eurokrem, Nutella, and
-        Lino-Lada fillings are favourite among the younger population </p>
-    <div class="info-cake">
-        <p class="info-cake__item"><span>Cooking time:</span> 30 min</p>
-        <p class="info-cake__item"><span>Servings:</span> 12</p>
-        <p class="info-cake__item"><span>Level:</span> Easy</p>
-    </div>
-
-    <h3>Ingredients</h3>
-    <ul>
-        <li>100g plain flour</li>
-        <li>2 large eggs</li>
-        <li>300ml milk</li>
-        <li>1 tbsp sunflower or vegetable oil, plus a little extra for frying</li>
-        <li>1 pinch salt</li>
-        <li>caster sugar to serve (optional)</li>
-
-    </ul>
-    <h3>Instructions</h3>
-    <div class="wrap-recepie">
-        <ol>
-            <li>Put 100g plain flour, 2 large eggs, 300ml milk, 1 tbsp sunflower or vegetable oil and a pinch of salt
-                into a bowl or large jug, then whisk to a smooth batter.</li>
-            <li>Set aside for 30 mins to rest if you have time, or start cooking straight away.</li>
-            <li>Set a medium frying pan or crêpe pan over a medium heat and carefully wipe it with some oiled kitchen
-                paper.</li>
-            <li>When hot, cook your pancakes for 1 min on each side until golden, keeping them warm in a low oven as you
-                go.</li>
-            <li>Serve with caster sugar, or your favourite filling. Once cold, you can layer the pancakes between baking
-                parchment, then wrap in cling film and freeze for up to 2 months.</li>
-
-        </ol>
-    </div>
-    <a href="../index.html">
-        <p>Back to All Recepies.</p>
+<body class="bg-gradient-to-t from-red-100 to-yellow-50 min-h-screen relative">
+    <a class=" hover:bg-red-200  transition-all duration-300 flex items-center gap-2 font-opensans text-xl z-50 text-orange-900 bg-yellow-50 py-2 px-4 rounded-full fixed top-8 left-10 shadow-md"
+        href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-orange-900 " viewBox="0 0 24 24" width="24" height="24">
+            <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z" />
+        </svg><span>Back</span>
     </a>
+    <div class="h-[300px]  relative w-full items-end bg-repeat "
+        style="background-image: url(../imgs/patern_pancake.png);">
+
+        <img src="../imgs/palacinke.jpg" style="box-shadow: inset 0 0 0 40px rgb(254 252 232)"
+            class="object-cover w-[350px] h-[350px] z-10 rounded-full overflow-hidden border-[10px] border-yellow-50 absolute -bottom-1/2 left-1/2 -translate-x-1/2 "
+            alt="Pancakes filled with hazelnut on the table.">
+    </div>
+
+    <h1
+        class="  text-red-500 mt-[120px]  pt-12 mb-4 sm:leading-tight font-shand text-7xl md:text-[96px] font-extrabold text-center">
+        Pancakes</h1>
+
+    <div class="container mx-auto">
+        <div class="flex gap-8   text-orange-900 font-bold font-opensans  text-xl  px-4 rounded-t-lg justify-center ">
+            <p class="info-cake__item"><span>Cooking time:</span> 30 min</p>
+            <p class="info-cake__item"><span>Servings:</span> 12</p>
+            <p class="info-cake__item"><span>Level:</span> Easy</p>
+        </div>
+
+        <div class="max-w-[800px] mx-auto px-4 md:px-8">
+
+            <p class="font-opensans mt-8 mx-auto text-orange-900 text-xl">They are called palačinka
+                (plural:
+                palačinke).
+                These pancakes
+                are thin
+                and filled with
+                apricot,
+                plum, lingonberry, apple or strawberry jam, chocolate sauce, or hazelnut spread. Eurokrem, Nutella, and
+                Lino-Lada fillings are favourite among the younger population </p>
+            <h3 class="text-orange-900 font-shand text-4xl mt-10 mb-2">Ingredients:</h3>
+            <ul class="list-disc ml-14">
+                <li class="font-opensans text-2xl text-orange-900 py-0.5">100g plain flour</li>
+                <li class="font-opensans text-2xl text-orange-900 py-0.5">2 large eggs</li>
+                <li class="font-opensans text-2xl text-orange-900 py-0.5">300ml milk</li>
+                <li class="font-opensans text-2xl text-orange-900 py-0.5">1 tbsp sunflower or vegetable oil, plus a
+                    little
+                    extra for frying</li>
+                <li class="font-opensans text-2xl text-orange-900 py-0.5">1 pinch salt</li>
+                <li class="font-opensans text-2xl text-orange-900 py-0.5">caster sugar to serve (optional)</li>
+
+            </ul>
+            <h3 class="text-orange-900 font-shand text-4xl mt-10 mb-2">Instructions</h3>
+            <div>
+                <ol class="list-decimal ml-14">
+                    <li class="font-opensans text-2xl text-orange-900 py-1.5">Put 100g plain flour, 2 large eggs, 300ml
+                        milk, 1 tbsp sunflower or vegetable oil and a pinch of
+                        salt
+                        into a bowl or large jug, then whisk to a smooth batter.</li>
+                    <li class="font-opensans text-2xl text-orange-900 py-1.5">Set aside for 30 mins to rest if you have
+                        time, or start cooking straight away.</li>
+                    <li class="font-opensans text-2xl text-orange-900 py-1.5">Set a medium frying pan or crêpe pan over
+                        a
+                        medium heat and carefully wipe it with some oiled
+                        kitchen
+                        paper.</li>
+                    <li class="font-opensans text-2xl text-orange-900 py-1.5">When hot, cook your pancakes for 1 min on
+                        each
+                        side until golden, keeping them warm in a low oven as
+                        you
+                        go.</li>
+                    <li class="font-opensans text-2xl text-orange-900 py-1.5">Serve with caster sugar, or your favourite
+                        filling. Once cold, you can layer the pancakes between
+                        baking
+                        parchment, then wrap in cling film and freeze for up to 2 months.</li>
+
+                </ol>
+            </div>
+            <div class="flex justify-between mt-12 mb-20">
+                <a class=" flex gap-2 items-center bg-red-500 hover:bg-red-400 hover:-translate-y-1 transition-all duration-300 active:bg-red-600 pl-8 pr-10 py-4 rounded-md text-white font-opensans uppercase font-bold"
+                    href="../recipes/trilece.html">
+                    <svg class="fill-white h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0H24V24H0z" />
+                        <path
+                            d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z" />
+                    </svg>
+                    <p>Three Milk Cake</p>
+                </a>
+                <a class=" flex gap-2 items-center bg-red-500 hover:bg-red-400 hover:-translate-y-1 transition-all duration-300 active:bg-red-600 pl-8 pr-10 py-4 rounded-md text-white font-opensans uppercase font-bold"
+                    href="../recipes/cizkejk.html">
+                    <svg class="fill-white h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0H24V24H0z" />
+                        <path
+                            d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z" />
+                    </svg>
+                    <p>Cheesecake</p>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
 </body>
 
 </html>
